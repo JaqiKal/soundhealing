@@ -142,13 +142,10 @@
    transform: scale(1.05);
  }
 
-
-
 .navbar__menu a:hover {
   color: #fa2dab;
   transform: scale(1.05);
 }
-
 
  #hero,
  #practical-info,
@@ -252,12 +249,10 @@
    max-width: 1200px;
    margin: 0 auto;
    padding: 2rem;
-
  }
 
  .section__column {
    flex: 1;
-
  }
 
  .section__column h2 {
@@ -311,6 +306,18 @@
   text-align: center;
   color: #f2d398;
 }
+
+.card {
+  border: 1px solid transparent;
+
+}
+.card:hover {
+  border-color: #ffc502;
+  cursor: pointer;
+
+}
+
+
 .card__text {
   flex-grow: 1;
   margin-bottom: 1rem;
