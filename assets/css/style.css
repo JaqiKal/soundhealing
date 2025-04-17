@@ -8,11 +8,16 @@
    box-sizing: border-box;
  }
 
+  /* GLOBAL STYLES */
+  html {
+    scroll-behavior: smooth;
+  }
+
  body {
    font-family: 'Open Sans', sans-serif;
    line-height: 1.6;
    color: #f2d398;
-   background: #100e0c;
+  
  }
 
  h1,
@@ -37,7 +42,6 @@
 }
 
  /* NAVBAR */
-
  .navbar {
    position: fixed;
    width: 100%;
@@ -57,8 +61,20 @@
    font-size: 1.5rem;
    color: #ffc502;
    font-weight: bold;
-
+   font-family: "Open Sans", "Poppins";
  }
+
+ .navbar__brand a {
+  color: #ffc502;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.navbar__brand a:hover {
+  color: #fa2dab;
+  transform: scale(1.05);
+}
 
  .navbar__toggle {
    display: flex;
@@ -77,6 +93,10 @@
    border-radius: 3px;
    transition: all 0.3s ease-in-out;
  }
+ .navbar__toggle:hover span {
+  background-color: #fa2dab;
+  transform: scale(1.1);
+}
 
  /* When menu is open – transform to X */
  .navbar__toggle.active span:nth-child(1) {
@@ -110,8 +130,25 @@
 
  .navbar__menu a {
    text-decoration: none;
-   color: #f2d398
+   color: #ffc502;
+   text-decoration: none;
+   transition: color 0.3s ease, transform 0.3s ease;
+   display: inline-block;
  }
+
+ .navbar__menu a:hover
+ {
+   color: #fa2dab;
+   transform: scale(1.05);
+ }
+
+
+
+.navbar__menu a:hover {
+  color: #fa2dab;
+  transform: scale(1.05);
+}
+
 
  #hero,
  #practical-info,
@@ -139,9 +176,6 @@
  }
 
  .hero__content {
-
-   /* background-color: rgba(14, 11, 14, 0.4);*/
-
    display: flex;
    flex-direction: column;
    gap: 2rem;
@@ -196,13 +230,11 @@
  }
 
  /* SECTION BACKGROUND IMAGE */
-
  .golden {
    background: url('../images/goldenswirl.webp') center/cover no-repeat;
  }
 
  /* INFO */
-
  .section--black {
    color: #f2d398;
    padding: 4rem 2rem;
@@ -220,10 +252,12 @@
    max-width: 1200px;
    margin: 0 auto;
    padding: 2rem;
+
  }
 
  .section__column {
    flex: 1;
+
  }
 
  .section__column h2 {
@@ -255,9 +289,7 @@
    margin-top: 0.5rem;
  }
 
-
  /* INSTRUCTORS */
-
  .section--cards {
   padding: 4rem 2rem;
 }
@@ -326,8 +358,29 @@
   background-color: #e31994;
 }
 
- /* FOOTER */
+/* FOOTER */
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: rgba(14, 11, 14, 0.9);
+  color: #f2d398;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 1rem;
+}
 
+.footer__content a {
+  color: #ffc502;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+/* Hover styles */
+.footer__content a:hover {
+  color: #fa2dab;
+  transform: scale(1.05);
+}
 
 
  /* MEDIA QUERIES */
@@ -355,6 +408,9 @@
      position: static;
      background: transparent;
      padding: 0;
+   }
+   .navbar__brand {
+    font-size: 2.0rem;
    }
 
    .hero__content {
