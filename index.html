@@ -41,14 +41,22 @@
 
 <body>
     <!-- NAVBAR -->
-    <header>
-        <h1>MÅ BRA MED LJUD</h1>
+    <header class="navbar">
+        <div class="navbar__container">
+          <h1 class="navbar__brand">MÅ BRA MED LJUD</h1>
 
-        <nav class="navbar__menu" id="navbar-menu" aria-label="Main menu">
+          <div class="navbar__toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="navbar__menu" id="navbar-menu" aria-label="Main menu">
             <a href="#hero">Home</a>
             <a href="#practical-info">Information</a>
             <a href="#instructors">Ledare</a>
         </nav>
+    </div>
     </header>
 
     <main>
@@ -174,6 +182,7 @@
     </footer>
 
     <!-- JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
