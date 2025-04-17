@@ -279,6 +279,17 @@
    margin-top: 0.5rem;
  }
 
+ .dagensprogram__text-box{
+  border:2px dashed #fa2dab;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.dagensprogram__text-box ul{
+  margin-top: 1rem;
+}
+
  /* INSTRUCTORS */
  .section--cards {
   padding: 4rem 2rem;
@@ -311,7 +322,6 @@
   cursor: pointer;
 
 }
-
 
 .card__text {
   flex-grow: 1;
@@ -347,17 +357,51 @@
 }
 
 .card__buttons a {
-  background-color: #fa2dab;
+  position: relative;
+  z-index: 0;
+  background-color: #fa2dab; /* Retain original background */
   color: #0e0b0e;
   padding: 0.4rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.2s ease;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.card__button:hover {
-  background-color: #e31994;
+.card__buttons a::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  background-size: 600%;
+  filter: blur(8px);
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  animation: glowing 20s linear infinite;
+}
+
+.card__buttons a:hover::before {
+  opacity: 1;
+}
+
+.card__buttons a:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 /* FOOTER */
