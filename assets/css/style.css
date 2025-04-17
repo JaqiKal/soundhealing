@@ -216,6 +216,15 @@
    font-weight: bold;
  }
 
+#date {
+font-size: 2rem;
+}
+
+#time {
+font-size: 1.5rem;
+}
+
+
  .pink {
    color: #fa2dab;
    font-weight: 600;
