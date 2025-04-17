@@ -265,11 +265,6 @@
    margin-bottom: 1rem;
  }
 
- .indent {
-   display: block;
-   padding-left: 6em;
- }
-
  /* Remove bullets for Praktisk info column */
  .nobullets ul {
    list-style: none;
