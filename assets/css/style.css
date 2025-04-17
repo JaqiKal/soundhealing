@@ -25,6 +25,17 @@
    padding: 0;
  }
 
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
  /* NAVBAR */
 
  .navbar {
@@ -247,7 +258,73 @@
 
  /* INSTRUCTORS */
 
+ .section--cards {
+  padding: 4rem 2rem;
+}
 
+.three-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%; 
+  background: #100e0c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #f2d398;
+}
+.card__text {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.card h4{
+  color:#ffc502;
+ }
+
+.card .knowhow{
+ font-size: small;
+}
+
+.card__image-wrapper {
+  margin: 1rem 0;
+}
+
+.card__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fa2dab;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card__buttons a {
+  background-color: #fa2dab;
+  color: #0e0b0e;
+  padding: 0.4rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.card__button:hover {
+  background-color: #e31994;
+}
 
  /* FOOTER */
 
