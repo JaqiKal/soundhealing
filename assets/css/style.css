@@ -191,14 +191,6 @@
    justify-content: center;
  }
 
- .hero__image {
-   width: 250px;
-   height: 250px;
-   ;
-   background: url('../images/lady-s-mantle.webp') center/cover no-repeat;
-   border-radius: 10%;
- }
-
  .hero__right {
    flex: 1;
  }
@@ -305,9 +297,21 @@ font-size: 1.5rem;
    color: #fa2dab;
    font-weight: bold;
  }
+
  .section__column p {
    margin-top: 0.5rem;
  }
+
+.practical-info__image{
+  width: 150px;
+  height: 150px;
+  background: url('../images/bowl-500.webp') center/cover no-repeat;
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  box-shadow: 0 0 150px 100px #ffc4022d;
+
+}
 
  /* Dagens program */
  .dagensprogram__text-box {
@@ -325,11 +329,11 @@ font-size: 1.5rem;
 
  .list-item-container {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 0.5rem;
-   margin: 0.5rem;
+   margin: 0rem;
  }
 
  .list-text {
