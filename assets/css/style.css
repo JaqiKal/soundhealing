@@ -313,13 +313,73 @@ font-size: 1.5rem;
 
 }
 
- /* Dagens program */
- .dagensprogram__text-box {
-   border: 2px dashed #fa2dab;
+.practical-info__text-box {
+   padding: 1rem;
+   margin: 1rem 0;
    border-radius: 20px;
-   font-weight: bold;
-   padding: 0.5rem;
+   background-color: rgba(14, 11, 14, 0.6);
+   color: #f2d398;
+   position: relative;
+   box-shadow: 0 0 150px 100px #ffc4022d;
  }
+
+ .practical-info__text-box ul {
+   list-style-type: none;
+   line-height: 1.4;
+   margin: 0;
+   padding: 0;
+ }
+
+ .practical-info__text-box p {
+   color: #fa2dab;
+   font-weight: bold;
+ }
+
+ /* Adapted from: https://codepen.io/stg/pen/YGRpZJ */
+.dagensprogram__text-box {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 20px;
+
+  color: #f2d398;
+  position: relative;
+
+  background-image: 
+    linear-gradient(to right, #fa2dab 50%, transparent 50%), 
+    linear-gradient(to right, #fa2dab 50%, transparent 50%), 
+    linear-gradient(to bottom, #fa2dab 50%, transparent 50%), 
+    linear-gradient(to bottom, #fa2dab 50%, transparent 50%);
+  background-size: 
+    20px 2px, 
+    20px 2px, 
+    2px 20px, 
+    2px 20px;
+  background-position: 
+    0 0, 
+    0 100%, 
+    0 0, 
+    100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+
+  animation: marching-ants-1 10s linear infinite;
+}
+
+@keyframes marching-ants-1 {
+  0% {
+    background-position: 
+      0 0, 
+      0 100%, 
+      0 0, 
+      100% 0;
+  }
+  100% {
+    background-position: 
+      40px 0, 
+      -40px 100%, 
+      0 -40px, 
+      100% 40px;
+  }
+}
 
  .arrow-list {
    list-style: none;
