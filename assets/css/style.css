@@ -143,11 +143,6 @@
    transform: scale(1.05);
  }
 
- .navbar__menu a:hover {
-   color: #fa2dab;
-   transform: scale(1.05);
- }
-
  #hero,
  #practical-info,
  #instructors {
