@@ -464,7 +464,7 @@ font-size: 1.5rem;
    justify-content: space-between;
    height: 100%;
    background: #100e0c;
-   padding: 0.4rem;
+   padding: 1rem;
    border-radius: 10px;
    text-align: center;
    color: #f2d398;
@@ -484,6 +484,8 @@ font-size: 1.5rem;
  .card__text {
    flex-grow: 1;
    margin-bottom: 1rem;
+   text-align: left;
+
  }
 
  .card h4 {
