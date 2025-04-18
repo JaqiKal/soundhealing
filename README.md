@@ -21,6 +21,7 @@ The goal is to create a calm, accessible, and informative experience for our par
 ├── /assets                → Static assets
 │   ├── /css               → Custom styles
 │   ├── /documents         → Visuals and planning docs
+│   ├── /favicon           → Favourite icon
 │   ├── /images            → Images and icons
 │   └── /javascript        → JavaScript for interactivity
 ├── .gitignore             → Lists files/folders Git should ignore
