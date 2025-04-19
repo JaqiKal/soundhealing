@@ -179,13 +179,15 @@
  .hero__content {
    display: flex;
    flex-direction: column;
-   gap: 2rem;
+   /* TODO: gap: 2rem; Keep it for now, but remove later */
    padding: 1rem;
-   max-width: 900px;
+   margin: 0.5rem;
+   max-width: 800px;
    background-color: rgba(14, 11, 14, 0.6);
    border-radius: 20px;
  }
 
+ /* TODO: Keep it for now, but remove later */
  .hero__left {
    display: flex;
    justify-content: center;
@@ -195,16 +197,18 @@
    flex: 1;
  }
 
- .hero__tagline {
-
+ .hero__tagline-top {
    color: #f2d398;
-   margin-top: 1rem;
+ }
+
+ .hero__tagline-bottom {
+   color: #f2d398;
  }
 
  .hero__text-box {
    border: 1px solid #ffc502;
    padding: 1rem;
-   margin-top: 1rem;
+   margin: 1rem 0;
  }
 
  .hero__text-box ul {
