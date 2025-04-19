@@ -253,6 +253,11 @@
    color: #f2d398;
  }
 
+ /* scroll-margin-top for anchor links */
+ #register {
+   scroll-margin-top: 90px;
+ }
+
  .hero__register {
    position: relative;
    width: 210px;
