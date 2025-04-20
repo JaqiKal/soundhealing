@@ -238,6 +238,22 @@
    padding: 0;
  }
 
+ .register__btn {
+   display: inline-block;
+   color: #481536;
+   padding: 0.2rem 0.4rem;
+   text-decoration: none;
+   font-weight: 600;
+   transition: transform 0.3s ease;
+   background: linear-gradient(145deg, #CACCCF, #ff4ac1);
+   border-radius: 10px;
+ }
+
+ .register__btn:hover {
+   transform: scale(1.1);
+   background-color: #ff4ac1;
+ }
+
  .hero__text-box p {
    font-weight: bold;
  }
