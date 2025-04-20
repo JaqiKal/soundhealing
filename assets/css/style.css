@@ -494,7 +494,7 @@
  }
 
  /* Button Style  */
- .btn-small {
+ .btn-program {
    flex: 0 0 160px;
    /* Equal width */
    background-color: #fa2dab;
@@ -511,7 +511,7 @@
    transition: transform 0.3s ease;
  }
 
- .btn-small::before {
+ .btn-program::before {
    content: '';
    position: absolute;
    top: -2px;
@@ -530,11 +530,11 @@
    animation: glowing 20s linear infinite;
  }
 
- .btn-small:hover::before {
+ .btn-program:hover::before {
    opacity: 1;
  }
 
- .btn-small:hover {
+ .btn-program:hover {
    transform: scale(1.05);
  }
 
@@ -563,12 +563,7 @@
 
  .card {
    border: 1px solid transparent;
-
- }
-
- .card:hover {
-   border-color: #ffc502;
-   cursor: pointer;
+   transition: border-color 1.1s ease;
 
  }
 
@@ -685,7 +680,11 @@
    transform: scale(1.05);
  }
 
- /* MEDIA QUERIES */
+
+ /*  ============================== */
+ /*  ======== MEDIA QUERIES ======= */
+ /* =============================== */
+
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
    .hero__content {
@@ -697,12 +696,23 @@
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {}
 
+
+ /* Mobile border effect on visible cards */
+ @media only screen and (max-width: 768px) {
+   .card.visible {
+     border-color: #ffc502;
+   }
+ }
+
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
+
+   /* Global - DESKTOP */
    h2 {
      font-size: 2rem;
    }
 
+   /* Navbar - DESKTOP */
    .navbar__toggle {
      display: none;
    }
@@ -711,19 +721,6 @@
      font-size: large;
    }
 
-   .hero__content {
-     flex-direction: row;
-     text-align: left;
-     gap: 4rem;
-   }
-
-   .list-item-container {
-     flex-direction: row;
-   }
-
-   .btn-small {
-     width: 100%;
-   }
 
    .navbar__menu {
      display: flex !important;
@@ -738,26 +735,41 @@
      font-size: 2.0rem;
    }
 
-   .hero__content {
-     flex-direction: row;
-     align-items: center;
-   }
-
-   .two-column {
-     flex-direction: row;
-     gap: 2rem;
-   }
-
-   .hero__content {
-     align-items: flex-start;
-     /* ⬅️ Align top */
-   }
-
+   /* Hero - DESKTOP */
    .hero__left,
    .hero__right {
      align-self: flex-start;
      /* ⬅️ Make sure both children align top */
    }
+
+   .hero__content {
+     flex-direction: row;
+     text-align: left;
+     gap: 4rem;
+
+   }
+
+   /* Info - DESKTOP */
+   .two-column {
+     flex-direction: row;
+     gap: 2rem;
+   }
+
+   .list-item-container {
+     flex-direction: row;
+   }
+
+   .btn-program {
+     width: 100%;
+   }
+
+   /* Instructors - DESKTOP */
+   .card:hover {
+     border-color: #ffc502;
+     cursor: pointer;
+
+   }
+
  }
 
  /* Large devices (laptops/desktops, 992px and up) */
