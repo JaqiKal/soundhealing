@@ -1,6 +1,25 @@
  /* Fonts */
  @import url("https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Poppins&display=swap");
 
+ :root {
+   /* Brand Colors */
+   --color-brand: #ffc502;
+   --color-accent: #fa2dab;
+   --color-text: #f2d398;
+   --color-bg: #0e0b0e;
+
+   /* Utility Colors */
+   --color-success: #48FF00;
+   --color-warning: #FFFB00;
+   --color-error: #FF0000;
+   --color-info: #00FFD5;
+
+   /* Buttons + Shadows */
+   --btn-glow-gradient: linear-gradient(45deg,
+       #FF0000, #FF7300, #FFFB00, #48FF00,
+       #00FFD5, #002BFF, #FF00C8, #FF0000);
+ }
+
  /* RESET */
  * {
    margin: 0;
@@ -16,7 +35,7 @@
  body {
    font-family: 'Open Sans', sans-serif;
    line-height: 1.6;
-   color: #f2d398;
+   color: var(--color-text);
 
  }
 
@@ -25,7 +44,7 @@
  h3 {
    font-family: 'Poppins', sans-serif;
    font-weight: 600;
-   color: #ffc502;
+   color: var(--color-brand);
    margin: 0;
    padding: 0;
  }
@@ -75,20 +94,20 @@
 
  .navbar__brand {
    font-size: 1.5rem;
-   color: #ffc502;
+   color: var(--color-brand);
    font-weight: bold;
    font-family: "Open Sans", "Poppins";
  }
 
  .navbar__brand a {
-   color: #ffc502;
+   color: var(--color-brand);
    text-decoration: none;
    transition: color 0.3s ease, transform 0.3s ease;
    display: inline-block;
  }
 
  .navbar__brand a:hover {
-   color: #fa2dab;
+   color: var(--color-accent);
    transform: scale(1.05);
  }
 
@@ -105,13 +124,13 @@
  .navbar__toggle span {
    display: block;
    height: 3px;
-   background-color: #ffc502;
+   background-color: var(--color-brand);
    border-radius: 3px;
    transition: all 0.3s ease-in-out;
  }
 
  .navbar__toggle:hover span {
-   background-color: #fa2dab;
+   background-color: var(--color-accent);
    transform: scale(1.1);
  }
 
@@ -148,14 +167,14 @@
 
  .navbar__menu a {
    text-decoration: none;
-   color: #ffc502;
+   color: var(--color-brand);
    text-decoration: none;
    transition: color 0.3s ease, transform 0.3s ease;
    display: inline-block;
  }
 
  .navbar__menu a:hover {
-   color: #fa2dab;
+   color: var(--color-accent);
    transform: scale(1.05);
  }
 
@@ -203,15 +222,15 @@
  }
 
  .hero__tagline-top {
-   color: #f2d398;
+   color: var(--color-text);
  }
 
  .hero__tagline-bottom {
-   color: #f2d398;
+   color: var(--color-text);
  }
 
  .hero__text-box {
-   border: 1px solid #ffc502;
+   border: 1px solid var(--color-brand);
    padding: 1rem;
    margin: 1rem 0;
  }
@@ -237,7 +256,7 @@
 
 
  .pink {
-   color: #fa2dab;
+   color: var(--color-accent);
    font-weight: 600;
  }
 
@@ -250,7 +269,7 @@
  .hero__right p {
    margin-bottom: 1rem;
    padding: 1rem;
-   color: #f2d398;
+   color: var(--color-text);
  }
 
  /* scroll-margin-top for anchor links */
@@ -339,12 +358,12 @@
 
  /* INFO */
  .section--black {
-   color: #f2d398;
+   color: var(--color-text);
    padding: 4rem 2rem;
  }
 
  .section--black h2 {
-   color: #ffc502;
+   color: var(--color-brand);
    margin-bottom: 1rem;
  }
 
@@ -383,12 +402,12 @@
 
  .cost {
    font-weight: bold;
-   color: #fa2dab;
+   color: var(--color-accent);
    padding-right: 5px;
  }
 
  .section__column li::marker {
-   color: #fa2dab;
+   color: var(--color-accent);
    font-weight: bold;
  }
 
@@ -412,7 +431,7 @@
    margin: 1rem 0;
    border-radius: 20px;
    background-color: rgba(14, 11, 14, 0.6);
-   color: #f2d398;
+   color: var(--color-text);
    position: relative;
    box-shadow: 0 0 150px 100px #ffc4022d;
  }
@@ -425,7 +444,7 @@
  }
 
  .practical-info__text-box p {
-   color: #fa2dab;
+   color: var(--color-accent);
    font-weight: bold;
  }
 
@@ -435,14 +454,14 @@
    margin: 1rem 0;
    border-radius: 20px;
 
-   color: #f2d398;
+   color: var(--color-text);
    position: relative;
 
    background-image:
-     linear-gradient(to right, #fa2dab 50%, transparent 50%),
-     linear-gradient(to right, #fa2dab 50%, transparent 50%),
-     linear-gradient(to bottom, #fa2dab 50%, transparent 50%),
-     linear-gradient(to bottom, #fa2dab 50%, transparent 50%);
+     linear-gradient(to right, var(--color-accent), 50%, transparent 50%),
+     linear-gradient(to right, var(--color-accent), 50%, transparent 50%),
+     linear-gradient(to bottom, var(--color-accent), 50%, transparent 50%),
+     linear-gradient(to bottom, var(--color-accent), 50%, transparent 50%);
    background-size:
      20px 2px,
      20px 2px,
@@ -487,7 +506,7 @@
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 0.5rem;
-   color: #ffc502;
+   color: var(--color-brand);
    font-weight: 800;
    flex: 1 1 auto;
 
@@ -497,7 +516,7 @@
  .btn-program {
    flex: 0 0 160px;
    /* Equal width */
-   background-color: #fa2dab;
+   background-color: var(--color-accent);
    color: #0e0b0e;
    padding: 0.4rem 1rem;
    border-radius: 5px;
@@ -518,9 +537,7 @@
    left: -2px;
    width: calc(100% + 4px);
    height: calc(100% + 4px);
-   background: linear-gradient(45deg,
-       #FF0000, #FF7300, #FFFB00, #48FF00,
-       #00FFD5, #002BFF, #FF00C8, #FF0000);
+   background: var(--btn-glow-gradient);
    background-size: 600%;
    filter: blur(8px);
    z-index: -1;
@@ -558,7 +575,7 @@
    padding: 1rem;
    border-radius: 10px;
    text-align: center;
-   color: #f2d398;
+   color: var(--color-text);
  }
 
  .card {
@@ -575,7 +592,7 @@
  }
 
  .card h4 {
-   color: #ffc502;
+   color: var(--color-brand);
  }
 
  .card .knowhow {
@@ -591,7 +608,7 @@
    height: 200px;
    border-radius: 50%;
    object-fit: cover;
-   border: 2px solid #fa2dab;
+   border: 2px solid var(--color-accent);
  }
 
  .card__buttons {
@@ -605,7 +622,7 @@
  .card__buttons a {
    position: relative;
    z-index: 0;
-   background-color: #fa2dab;
+   background-color: var(--color-accent);
    color: #0e0b0e;
    padding: 0.4rem 1.5rem;
    border-radius: 5px;
@@ -622,9 +639,7 @@
    left: -2px;
    width: calc(100% + 4px);
    height: calc(100% + 4px);
-   background: linear-gradient(45deg,
-       #FF0000, #FF7300, #FFFB00, #48FF00,
-       #00FFD5, #002BFF, #FF00C8, #FF0000);
+   background: var(--btn-glow-gradient);
    background-size: 600%;
    filter: blur(8px);
    z-index: -1;
@@ -661,14 +676,14 @@
    position: sticky;
    bottom: 0;
    background: rgba(14, 11, 14, 0.9);
-   color: #f2d398;
+   color: var(--color-text);
    font-size: 0.7rem;
    text-align: center;
    padding: 1rem;
  }
 
  .footer__content a {
-   color: #ffc502;
+   color: var(--color-brand);
    text-decoration: none;
    transition: color 0.3s ease, transform 0.3s ease;
    display: inline-block;
@@ -676,7 +691,7 @@
 
  /* Hover styles */
  .footer__content a:hover {
-   color: #fa2dab;
+   color: var(--color-accent);
    transform: scale(1.05);
  }
 
@@ -700,7 +715,7 @@
  /* Mobile border effect on visible cards */
  @media only screen and (max-width: 768px) {
    .card.visible {
-     border-color: #ffc502;
+     border-color: var(--color-brand);
    }
  }
 
@@ -765,7 +780,7 @@
 
    /* Instructors - DESKTOP */
    .card:hover {
-     border-color: #ffc502;
+     border-color: var(--color-brand);
      cursor: pointer;
 
    }
