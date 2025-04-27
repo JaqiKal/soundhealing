@@ -240,8 +240,8 @@
 
  .register__btn {
    display: inline-block;
-   color: #481536;
-   padding: 0.2rem 0.4rem;
+   color: blue;
+   padding: 0.1rem 0.2rem;
    text-decoration: none;
    font-weight: 600;
    transition: transform 0.3s ease;
@@ -250,8 +250,9 @@
  }
 
  .register__btn:hover {
-   transform: scale(1.1);
+   transform: scale(1.05);
    background-color: #ff4ac1;
+   text-decoration: underline;
  }
 
  .hero__text-box p {
@@ -354,6 +355,28 @@
    transform: scale(1.05) rotate(0deg);
    z-index: 10;
  }
+
+ .hero__register-text {
+   margin-top: 10px;
+   color: var(--color-brand);
+ }
+
+ .hero__register-text a {
+   text-decoration: none;
+
+ }
+
+ .hero__register-text a:hover {
+   text-decoration: underline;
+   color: var(--color-accent);
+ }
+
+ .regProg {
+   color: var(--color-brand);
+   font-weight: 600;
+ }
+
+
 
  /* SECTION BACKGROUND IMAGE */
 
