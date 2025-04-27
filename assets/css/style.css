@@ -76,6 +76,56 @@
    height: auto;
  }
 
+ .scroll-top {
+   position: fixed;
+   bottom: 3.8rem;
+   right: 0.1rem;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   opacity: 0;
+   cursor: pointer;
+   visibility: hidden;
+   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+   z-index: 1000;
+ }
+
+ .scroll-top--visible {
+   opacity: 1;
+   visibility: visible;
+ }
+
+ /* Image inside the button */
+ .scroll-top__icon {
+   width: 24px;
+   height: 24px;
+   object-fit: contain;
+   transition: transform 0.3s ease;
+ }
+
+ /* Subtle pulse animation */
+ .scroll-top:hover .scroll-top__icon {
+   animation: pulseArrow 1.5s infinite;
+ }
+
+ @keyframes pulseArrow {
+   0% {
+     transform: scale(1);
+   }
+
+   50% {
+     transform: scale(1.15);
+   }
+
+   100% {
+     transform: scale(1);
+   }
+ }
+
  /* NAVBAR */
  .navbar {
    position: fixed;
