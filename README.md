@@ -43,6 +43,10 @@ The goal is to create a calm, accessible, and informative experience for our par
 
 - Migration to React + component-based structure
 
+## Credits
+
+- Scroll icon by [Freepik](https://www.freepik.com/icon/up-arrow_16938305)
+
 ## 📜 License
 
 This project is licensed under the MIT License.

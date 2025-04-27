@@ -99,10 +99,9 @@
    visibility: visible;
  }
 
- /* Image inside the button */
  .scroll-top__icon {
-   width: 24px;
-   height: 24px;
+   width: 100%;
+   height: 100%;
    object-fit: contain;
    transition: transform 0.3s ease;
  }
@@ -236,7 +235,7 @@
 
  /* HERO */
  .hero {
-   background: url('../images/hero-bg.webp') center/cover fixed no-repeat;
+   background: url('../images/hero-bg.webp') center/cover no-repeat;
    min-height: 100vh;
    display: flex;
    align-items: center;
