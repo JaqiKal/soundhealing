@@ -1,5 +1,5 @@
  /* Fonts */
- @import url("https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Poppins&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
 
  :root {
    /* Brand Colors */
@@ -798,6 +798,26 @@
      gap: 4rem;
 
    }
+
+   .hero__register.glow {
+     animation: softPulse 2s ease-out forwards;
+   }
+
+   /* Add the pulse animation */
+   @keyframes softPulse {
+     0% {
+       box-shadow: 0 0 0px 0px #ffc4022d;
+     }
+
+     50% {
+       box-shadow: 0 0 150px 100px #ffc4022d;
+     }
+
+     100% {
+       box-shadow: 0 0 0px 0px #ffc4022d;
+     }
+   }
+
 
    /* Info - DESKTOP */
    .two-column {
