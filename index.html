@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Må BRA MED LJUD</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https://jaqikal.github.io; script-src 'self'; style-src 'self' 'unsafe-inline';">
 
     <!-- Meta Description (SEO) -->
     <meta name="description"
@@ -37,7 +39,6 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar__container">
 
@@ -61,7 +62,6 @@
     </header>
 
     <main>
-        <!-- HERO -->
         <section id="hero" class="hero">
             <div class="hero__content">
                 <div class="hero__left">
@@ -107,25 +107,25 @@
 
                     <div class="hero__register">
                         <div class="blob-wrapper-helen">
-                            <!-- Helén -->
-                            <a href="mailto:helen.skogsberg@gmail.com" class="blob-entry" aria-label="Anmäl via Helén">
+
+                            <a class="email-link blob-entry" data-user="helen.skogsberg" data-domain="gmail.com"
+                                aria-label="Anmäl via Helén">
+
+
                                 <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <!-- BLOB SHAPE -->
                                         <clipPath id="mask-helen">
                                             <path
                                                 d="M42.5,-43.7C56.3,-39.2,69.3,-26.9,74.4,-11.1C79.5,4.6,76.8,23.7,65.3,32.2C53.8,40.6,33.5,38.5,15.6,46.6C-2.3,54.8,-17.8,73.2,-32.9,74.6C-48,76,-62.7,60.3,-70.3,42.7C-77.9,25.1,-78.5,5.6,-72.8,-10.4C-67,-26.3,-54.9,-38.7,-41.7,-43.3C-28.6,-47.9,-14.3,-44.7,0.1,-44.7C14.4,-44.8,28.8,-48.2,42.5,-43.7Z"
                                                 transform="translate(100 100)" />
                                         </clipPath>
 
-                                        <!-- DROP SHADOW FILTER -->
                                         <filter id="blobShadowHelen" x="-20%" y="-20%" width="140%" height="140%">
                                             <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#fa2dab"
                                                 flood-opacity="0.6" />
                                         </filter>
                                     </defs>
 
-                                    <!-- IMAGE WITH CLIP AND SHADOW -->
                                     <g filter="url(#blobShadowHelen)">
                                         <image href="assets/images/helen-300.webp" width="200" height="200"
                                             clip-path="url(#mask-helen)" preserveAspectRatio="xMidYMid slice" />
@@ -134,26 +134,27 @@
                             </a>
                         </div>
 
-                        <!-- Erik -->
+
                         <div class="blob-wrapper-erik">
-                            <a href="mailto:mokusosound@gmail.com" class="blob-entry" aria-label="Anmäl via Erik">
+                            <a class="email-link blob-entry" data-user="mokusosound" data-domain="gmail.com"
+                                aria-label="Anmäl via Erik">
                                 <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <!-- Blob Shape for Erik -->
+
                                         <clipPath id="mask-erik">
                                             <path
                                                 d="M72.1,-36.2C86.5,-16.6,86.6,16.7,72.1,38.3C57.7,59.9,28.9,69.9,2.5,68.4C-23.9,67,-47.8,54.2,-60.2,33.7C-72.7,13.2,-73.7,-15,-61.8,-33.2C-49.9,-51.4,-24.9,-59.6,2,-60.7C28.8,-61.8,57.7,-55.9,72.1,-36.2Z"
                                                 transform="translate(100 100)" />
                                         </clipPath>
 
-                                        <!-- Shadow Filter -->
+
                                         <filter id="blobShadowErik" x="-20%" y="-20%" width="140%" height="140%">
                                             <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#fa2dab"
                                                 flood-opacity="0.6" />
                                         </filter>
                                     </defs>
 
-                                    <!-- Image inside masked group with shadow -->
+
                                     <g filter="url(#blobShadowErik)">
                                         <image href="assets/images/erik-300.webp" width="200" height="200"
                                             clip-path="url(#mask-erik)" preserveAspectRatio="xMidYMid slice" />
@@ -162,10 +163,11 @@
                             </a>
                         </div>
 
-                        <!-- Lynn -->
+
                         <div class="blob-wrapper-lynn">
 
-                            <a href="mailto:lynn.englund@hotmail.com" class="blob-entry" aria-label="Anmäl via Lynn">
+                            <a class="email-link blob-entry" data-user="lynn.englund" data-domain="hotmail.com"
+                                aria-label="Anmäl via Lynn">
                                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <clipPath id="mask-lynn">
@@ -173,14 +175,13 @@
                                                 d="M32.5,-48.3C42.5,-37.6,51.1,-28.5,58.3,-16.5C65.5,-4.6,71.3,10.2,68.3,23.1C65.3,35.9,53.6,46.8,40.8,53.3C27.9,59.8,14,61.9,0.2,61.6C-13.6,61.4,-27.2,58.8,-38.8,51.9C-50.4,45,-59.9,33.8,-61.8,21.6C-63.7,9.4,-57.9,-3.8,-55.6,-20.2C-53.2,-36.7,-54.2,-56.4,-45.6,-67.6C-36.9,-78.8,-18.4,-81.4,-3.6,-76.5C11.3,-71.6,22.6,-59.1,32.5,-48.3Z"
                                                 transform="translate(100 100)" />
 
-                                        </clipPath> <!-- Shadow Filter -->
+                                        </clipPath>
                                         <filter id="blobShadowLynn" x="-20%" y="-20%" width="140%" height="140%">
                                             <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#fa2dab"
                                                 flood-opacity="0.6" />
                                         </filter>
                                     </defs>
 
-                                    <!-- Image inside masked group with shadow -->
                                     <g filter="url(#blobShadowLynn)">
                                         <image href="assets/images/lynn-300.webp" width="200" height="200"
                                             clip-path="url(#mask-lynn)" preserveAspectRatio="xMidYMid slice" />
@@ -189,14 +190,19 @@
                             </a>
                         </div>
                     </div>
+                    <div class="hero__register-text">
+                        <p>Se <a href="#practical-info"><span class="regProg">Programmet </span></a> och möt
+                            våra <a href="#instructors"><span class="regProg">Ledare</span></a>
+                        </p>
+                    </div>
                 </div>
         </section>
 
-        <!-- SECTION BACKGROUND IMAGE -->
+
 
         <div class="golden">
 
-            <!-- INFO -->
+
             <section id="practical-info" class="section--black golden">
                 <div class="two-column">
                     <div class="section__column nobullets">
@@ -248,12 +254,12 @@
 
             </section>
 
-            <!-- INSTRUCTORS -->
+
             <section id="instructors" class="section--cards">
                 <h2 class="visually-hidden">Ledare</h2>
                 <div class="three-column">
 
-                    <!-- Helén -->
+
                     <div class="card">
                         <h3>Helén Skogsberg</h3>
                         <p class="card__knowhow">Örtterapeut, Lymfmassör, Sound Healer</p>
@@ -274,14 +280,14 @@
                         </div>
                         <div class="card__buttons">
                             <a href="https://www.bokadirekt.se/places/holistic-mind-eskilstuna-35977" target="_blank"
-                                rel="noopener">Boka Helén</a>
+                                rel="noopener noreferrer">Boka Helén</a>
                             <a href="https://holisticmindeskilstuna.wordpress.com/591-2/" target="_blank"
-                                rel="noopener">Läs
+                                rel="noopener noreferrer">Läs
                                 mer</a>
                         </div>
                     </div>
 
-                    <!-- Erik -->
+
                     <div class="card">
                         <h3>Erik "Mokuso" Ström</h3>
                         <p class="card__knowhow">Sound Healer, Klangmassör, Chakra-balanserare</p>
@@ -298,12 +304,12 @@
                         </div>
                         <div class="card__buttons">
                             <a href="https://www.bokadirekt.se/places/mokuso-erik-strom-58685" target="_blank"
-                                rel="noopener">Boka Erik</a>
-                            <a href="https://mokuso.weebly.com/" target="_blank" rel="noopener">Läs mer</a>
+                                rel="noopener noreferrer">Boka Erik</a>
+                            <a href="https://mokuso.weebly.com/" target="_blank" rel="noopener noreferrer">Läs mer</a>
                         </div>
                     </div>
 
-                    <!-- Lynn -->
+
                     <div class="card">
                         <h3>Lynn Englund</h3>
                         <p class="card__knowhow">Sound Healer, Trumresa, Medial vägledning</p>
@@ -321,7 +327,9 @@
                             <p>Lynn är Sound Healer och har även erfarenhet inom det mediala.</p>
                         </div>
                         <div class="card__buttons">
-                            <a href="mailto:lynn.englund@hotmail.com">Boka Lynn</a>
+                            <a class="email-link" data-user="lynn.englund" data-domain="hotmail.com"
+                                aria-label="Boka Lynn">Boka Lynn</a>
+
                         </div>
                     </div>
                 </div>
@@ -329,20 +337,21 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
+
     <footer class="footer" id="footer">
         <div class="footer__content">
             <p>
                 © 2025
-                <a href="https://github.com/JaqiKal" target="_blank" rel="noopener">JaqiKal</a>
+                <a href="https://github.com/JaqiKal" target="_blank" rel="noopener noreferrer">JaqiKal</a>
                 – Webbplats skapad med 💜
             </p>
         </div>
     </footer>
 
-    <!-- JS -->
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/cardBorder.js"></script>
+    <script src="assets/js/obfuscateEmail.js"></script>
 </body>
 
 </html>
